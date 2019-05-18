@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>Thumbnail Grid Expanding</title>
+    <link href="css/jquery.gridder.min.css" rel="stylesheet"/>
+    <link href="css/w3.css" rel="stylesheet"/>
+    <link href="css/style.css" rel="stylesheet"/>
+</head>
+<body>
+    
+    <div class="container">
+        <ul class="gridder clearfix">
+            <li class="gridder-list" data-griddercontent="#content1">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg');">
+                    <div class="overlay">
+                        <span class="title">Aatrox</span><br>
+                        <span class="description">the Darkin Blade</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content2">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_2.jpg');">
+                    <div class="overlay">
+                        <span class="title">Thresh</span><br>
+                        <span class="description">the Chain Warden</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content3">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_2.jpg');">
+                    <div class="overlay">
+                        <span class="title">Tryndamere</span><br>
+                        <span class="description">the Barbarian King</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content4">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg');">
+                    <div class="overlay">
+                        <span class="title">Gragas</span><br>
+                        <span class="description">the Rabble Rouser</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content5">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_1.jpg');">
+                    <div class="overlay">
+                        <span class="title">Aurelion Sol</span><br>
+                        <span class="description">The Star Forger</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content6">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_3.jpg');">
+                    <div class="overlay">
+                        <span class="title">Cassiopeia</span><br>
+                        <span class="description">the Serpent's Embrace</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content7">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_1.jpg');">
+                    <div class="overlay">
+                        <span class="title">Poppy</span><br>
+                        <span class="description">Keeper of the Hammer</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content8">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_1.jpg');">
+                    <div class="overlay">
+                        <span class="title">Ryze</span><br>
+                        <span class="description">the Rogue Mage</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content9">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_3.jpg');">
+                    <div class="overlay">
+                        <span class="title">Sion</span><br>
+                        <span class="description">The Undead Juggernaut</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content10">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg');">
+                    <div class="overlay">
+                        <span class="title">Annie</span><br>
+                        <span class="description">the Dark Child</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content11">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_2.jpg');">
+                    <div class="overlay">
+                        <span class="title">Jhin</span><br>
+                        <span class="description">the Virtuoso</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content12">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg');">
+                    <div class="overlay">
+                        <span class="title">Nautilus</span><br>
+                        <span class="description">the Titan of the Depths</span>
+                    </div>
+                </div>
+            </li>
+            <li class="gridder-list" data-griddercontent="#content13">
+                <div class="image" style="background-image: url('http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_2.jpg');">
+                    <div class="overlay">
+                        <span class="title">Karma</span><br>
+                        <span class="description">the Enlightened One</span>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div id="content1" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Aatrox_1.jpg" alt="Aatrox the Darkin Blade" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Aatrox<br/><small>the Darkin Blade</small></h2>
+                        <p class="subtitle">Aatrox is a legendary warrior, one of only five that remain of an ancient race known as the Darkin. He wields his massive blade with grace and poise, slicing through legions in a style that is hypnotic to behold. With each foe felled, Aatrox's ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content2" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Thresh_2.jpg" alt="Thresh the Chain Warden" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Thresh<br/><small>the Chain Warden</small></h2>
+                        <p class="subtitle">"The mind is a wondrous thing to tear apart."<br/><br/>Sadistic and cunning, Thresh is a restless spirit who prides himself on tormenting mortals and breaking them with slow, excruciating inventiveness. His victims suffer far beyond the point of death,...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content3" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Tryndamere_2.jpg" alt="Tryndamere the Barbarian King" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Tryndamere<br/><small>the Barbarian King</small></h2>
+                        <p class="subtitle">Fueled by his unbridled fury and rage, Tryndamere cuts his way through the tundra, mastering the art of battle by challenging the Freljord's greatest warriors. The wrathful barbarian seeks revenge on the one who decimated his clan and strikes down all ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content4" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Gragas_0.jpg" alt="Gragas the Rabble Rouser" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Gragas<br/><small>the Rabble Rouser</small></h2>
+                        <p class="subtitle">The only thing more important to Gragas than fighting is drinking. His unquenchable thirst for stronger ale has led him in search of the most potent and unconventional ingredients to toss in his still. Impulsive and unpredictable, this rowdy carouser ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content5" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/AurelionSol_1.jpg" alt="Aurelion Sol The Star Forger" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Aurelion Sol<br/><small>The Star Forger</small></h2>
+                        <p class="subtitle">Aurelion Sol once graced the vast emptiness of the cosmos with celestial wonders of his own devising. Now, he is forced to wield his awesome power at the behest of a space-faring empire that tricked him into servitude. Desiring a return to his ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content6" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Cassiopeia_3.jpg" alt="Cassiopeia the Serpent's Embrace" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Cassiopeia<br/><small>the Serpent's Embrace</small></h2>
+                        <p class="subtitle">Cassiopeia is a terrifying creature - half woman, half snake - whose slightest glance brings death. The youngest daughter of one of Noxus' most influential families, she was once a beautiful and cunning temptress capable of manipulating the hardest ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content7" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Poppy_1.jpg" alt="Poppy Keeper of the Hammer" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Poppy<br/><small>Keeper of the Hammer</small></h2>
+                        <p class="subtitle">"I'm no hero. Just a yordle with a hammer."<br/><br/>Runeterra has no shortage of valiant champions, but few are as tenacious as Poppy. Bearing a hammer twice the length of her body, this determined yordle has spent untold years searching for the ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content8" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Ryze_1.jpg" alt="Ryze the Rogue Mage" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Ryze<br/><small>the Rogue Mage</small></h2>
+                        <p class="subtitle">There are many on Runeterra who are attracted to the study of magic or, in recent times, the emerging field of techmaturgy. For most, pursuit of such knowledge is formalized in a college or university. The halls of traditional study were never for ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content9" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Sion_3.jpg" alt="Sion The Undead Juggernaut" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Sion<br/><small>The Undead Juggernaut</small></h2>
+                        <p class="subtitle">BLOOD. SMELL IT. WANT. ACHING. NEED! CLOSE NOW. THEY COME. NO CHAINS? FREE! KILL! IN REACH. YES! DIE! DIE! Gone. Too quick. No fight. More. I want... more. A voice? Unfamiliar. I see him. The Grand ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content10" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Annie_0.jpg" alt="Annie the Dark Child" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Annie<br/><small>the Dark Child</small></h2>
+                        <p class="subtitle">There have always been those within Noxus who did not agree with the evils perpetrated by the Noxian High Command. The High Command had just put down a coup attempt from the self-proclaimed Crown Prince Raschallion, and a crackdown on any form of ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content11" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Jhin_2.jpg" alt="Jhin the Virtuoso" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Jhin<br/><small>the Virtuoso</small></h2>
+                        <p class="subtitle">"Art requires a certain...cruelty."<br/><br/>Jhin is a meticulous criminal psychopath who believes murder is art. Once an Ionian prisoner, but freed by shadowy elements within Ionia's ruling council, the serial killer now works as their cabal's ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content12" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Nautilus_0.jpg" alt="Nautilus the Titan of the Depths" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Nautilus<br/><small>the Titan of the Depths</small></h2>
+                        <p class="subtitle">Once, Nautilus was a sailor commissioned by the Institute of War to explore the uncharted reaches of the Guardian's Sea. This expedition took him deep into unknown waters where he and his crew found a vast section of black oozing liquid that none of ...</p>
+                    </div>
+                </div>
+        </div>
+        <div id="content13" class="gridder-content">
+                <div class="w3-row">
+                    <div class="w3-col m7">
+                        <img src="http://ddragon.leagueoflegends.com/cdn/img/champion/splash/Karma_2.jpg" alt="Karma the Enlightened One" />
+                    </div>
+                    <div class="w3-col m5" style="padding-left: 20px;">
+                        <h2 class="title">Karma<br/><small>the Enlightened One</small></h2>
+                        <p class="subtitle">Karma is a woman of indomitable will and unbound spiritual power. She is the soul of Ionia made manifest and an inspiring presence on the battlefield, shielding her allies and turning back her foes. A strong leader torn between tradition and ...</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.gridder.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
