@@ -334,7 +334,7 @@ body {
 }
 .el:nth-child(1) .el__bg:before {
   transition-delay: 0s;
-  background-image: url("../images/web_developer_wallpaper__code__by_plusjack-d7bmt54.jpg");
+  background-image: url("../images/web_developer.jpg");
 }
 .el:nth-child(2) {
   -webkit-transform: translate3d(105.2083333333%, 0, 0);
@@ -359,7 +359,7 @@ body {
 }
 .el:nth-child(2) .el__bg:before {
   transition-delay: 0.1s;
-  background-image: url("../blue-brick-wall-chair-1282315 (1).jpg"); 
+  background-image: url("../images/work.jpg"); 
 }
 .el:nth-child(3) {
   -webkit-transform: translate3d(210.4166666667%, 0, 0);
@@ -384,7 +384,7 @@ body {
 }
 .el:nth-child(3) .el__bg:before {
   transition-delay: 0.2s;
-  background-image: url("../images/pexels-photo-590493.jpeg");
+  background-image: url("../images/education.jpeg");
 }
 .el:nth-child(4) {
   -webkit-transform: translate3d(315.625%, 0, 0);
@@ -409,7 +409,7 @@ body {
 }
 .el:nth-child(4) .el__bg:before {
   transition-delay: 0.3s;
-  background-image: url("../black-black-and-white-blur-112854.jpg");
+  background-image: url("../images/portfolio.jpg");
 }
 .el:nth-child(5) {
   -webkit-transform: translate3d(420.8333333333%, 0, 0);
@@ -434,7 +434,7 @@ body {
 }
 .el:nth-child(5) .el__bg:before {
   transition-delay: 0.4s;
-  background-image: url("../giphy\ \(2\).gif");
+  background-image: url("../images/contact.gif");
 }
 .el:hover .el__bg:after {
   opacity: 0;
@@ -801,17 +801,7 @@ border-radius: 20px;
 }
 
 
-/* ================== Work Timeline =====
-
-
-
-========== work timeline end ===============*/
-
-
-
-/*++++++++++++++++++++++++++ Portfolio */
-
-
+/*++++++++++++++++++++++++++ Portfolio +++++++++++++++++++++*/
 
 
 .container1 {
@@ -898,11 +888,12 @@ border-radius: 20px;
   font-weight: 500;
   color:whitesmoke;
 }
+
 .box1 .content1 p {
   margin: 0;
   padding: 0;
   color: whitesmoke;
-  font-size: 16px;
+  font-size: 12px;
 }
 
 .box1 .content1 h6{
@@ -911,6 +902,12 @@ border-radius: 20px;
   font-size: 15px;
   font-weight: 300;
   color:red;
+
+}
+
+.box1 .content1 img{
+ width: 150px;
+ height: 100px;
 
 }
 /* ---------------------------------------------- /*
@@ -927,7 +924,7 @@ h1, h2, h3, h4{
 }
 
 #home {
-	background: url(../images/web_developer_wallpaper__code__by_plusjack-d7bmt54.jpg);
+	background: url(../images/web_developer.jpg);
 	background-color: #222;
 	background-attachment: fixed;
 	background-repeat: no-repeat;
@@ -989,25 +986,55 @@ h1, h2, h3, h4{
 
 .start span{
     font-weight: 500;
-    color: #66fcf1;
+    color: #89ff00;
+    /* color: #66fcf1; */
 }
 
 
 /* SWIPER */
 
 .swiper-container {
-  width: 100vw;
+  width: 80vw;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 .swiper-slide {
   background-position: center;
   background-size: cover;
-  width: 300px;
-  height: 300px;
+  width: 320px;
+  height: 320px;
+}
+
+@media only screen and (max-height: 700px) {
+  .swiper-slide {
+    width: 300px;
+    height: 200px;
+  }
+ 
 }
 
 
+@media only screen and (max-width: 500px) {
+  .swiper-slide {
+    width: 260px;
+    height: 320px;
+  }
+ 
+}
+
+.swiper-slide p {
+  font-family: Raleway, "Times New Roman", Times, sans-serif;
+  font-size: 16px;
+	font-style: normal;
+	text-transform: none;
+	margin: 25px 25px;
+  color: #000;
+}
+
+.swiper-slide p span{
+  color: #007AFF;
+  font-size: 20px;
+}
 
 /* SWIPER 2*/
 
@@ -1018,7 +1045,7 @@ h1, h2, h3, h4{
 .swipe-hint.swipe-horizontal {
   position: relative;
   width: 100px;
-  left: 50%;
+  left: 45%;
   margin-left: 25px;
 }
 .swipe-hint.swipe-horizontal i {
@@ -1046,6 +1073,20 @@ h1, h2, h3, h4{
           animation: hint-dot ease-in 2s;
   -webkit-animation-iteration-count: infinite;
           animation-iteration-count: infinite;
+}
+
+
+@media only screen and (max-height: 700px) {
+
+  .swipe-hint.swipe-horizontal i {
+    color: black;
+  }
+  
+  .swipe-hint.swipe-horizontal {
+    left: 40%;
+
+  }
+
 }
 
 @-webkit-keyframes hint-finger {
@@ -1151,4 +1192,31 @@ h1 {
   font-family: Source Code Pro, sans-serif;
   font-size: 40px;
 
+}
+
+
+/* ---------------------------------------------- /*
+ * Preloader
+/* ---------------------------------------------- */
+
+#preloader {
+  background: #1f1f1f;
+	bottom: 0;
+	left: 0;
+	position: fixed;
+	right: 0;
+	top: 0;
+	z-index: 9999;
+}
+
+#status {
+	background-image: url(../images/preloader.gif);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 200px;
+	left: 50%;
+	margin: -100px 0 0 -100px;
+	position: absolute;
+	top: 50%;
+	width: 200px;
 }

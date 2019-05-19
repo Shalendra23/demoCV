@@ -1,3 +1,13 @@
+	/* ---------------------------------------------- /*
+	 * Preloader
+	/* ---------------------------------------------- */
+
+	$(window).load(function() {
+		$('#status').fadeOut();
+		$('#preloader').delay(100).fadeOut('slow');
+	});
+
+
 $(document).ready(function() {
   $(".trigger").click(function() {
     $(".menu").toggleClass("active"); 
@@ -138,7 +148,7 @@ const morpher = (element, start, end) => {
 $(() => {
   const button = document.querySelector('.js-morph-trigger');
   const morph = document.querySelector('*[data-morph]');
-  const words = ["Web Designer", "UX Designer", "UI Designer", "Coder", "Full Stack Web Developer"];
+  const words = ["Web Designer", "UX Designer", "Coder", "UI Designer", "Full Stack Web Developer"];
 
   let counter = 0;
 
