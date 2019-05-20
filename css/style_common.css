@@ -1,6 +1,6 @@
 .view {
 	width: 316px;
-	height: 170px;
+	height: 200px;
 	margin: 10px;
 	float: left;
 	position: relative;
@@ -142,4 +142,11 @@
 	-moz-transition: left 0.3s ease-in-out;
 	-ms-transition: left 0.3s ease-in-out;
 	transition: left 0.3s ease-in-out;
+}
+
+@media only screen and (max-height: 700px) {
+.view {
+	width: 316px;
+	height: 160px;
+}
 }
